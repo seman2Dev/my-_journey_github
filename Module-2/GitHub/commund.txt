@@ -1,0 +1,5 @@
+git add . (সব ফাইল গিট ট্র্যাকিংয়ে যুক্ত করা) One time each project to start git
+git commit -m "first commit" (ফাইলগুলোর একটি স্ন্যাপশট বা সেভ পয়েন্ট তৈরি করা) Every time to add
+git branch -M main (ব্রাঞ্চের নাম main করা)
+git remote add origin ... (আপনার লোকাল প্রজেক্টের সাথে গিটহাবের অনলাইন রিপোজিটরির সংযোগ তৈরি করা)
+git push -u origin main (কোড গিটহাবে আপলোড করা)
