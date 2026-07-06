@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="nav.css">
+  </head>
+<body>
+    <nav>
+        <ul class="nav-ul">
+            <li><a href="class_2-5.htm">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav><br>
+  <form>
+    <table>
+      <tr>
+        <td><label for="fname">Name</label></td>
+        <td><input type="text" id="fname" placeholder="Enter your first name"></td>
+      </tr>
+
+      <tr>
+        <td><label for="email">Email</label></td>
+        <td><input type="email" id="email" placeholder="Enter your email"></td>
+      </tr>
+
+      <tr>
+        <td><label for="password">Phone</label></td>
+        <td><input type="password" id="password" placeholder="Enter your password"></td>
+      </tr>
+
+      <tr>
+        <td><label for="cpassword">Region</label></td>
+        <td><textarea name="Region Description" style="width: 200px; height: 50px;"></textarea></td>
+
+      </tr>
+
+      <tr>
+          <td colspan="2" style="text-align:center;">
+          <input type="submit" value="Contact "></td>
+      </tr>
+    </table>
+  </form>
+    <style>
+    body form{
+      font-family: Arial, sans-serif;
+      background: #f3f6fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    table {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"], input[type="password"], input[type="email"] {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus {
+      border-color: #4a90e2;
+      outline: none;
+      box-shadow: 0 0 5px #4a90e2;
+    }
+
+    input[type="submit"] {
+      background: #4a90e2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background: #357abd;
+    }
+  </style>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+</head>
+ <body>
+  <form>
+    <table>
+      <tr>
+            <td><label for="">First Name</label></td>
+            <td><label for="">:</label></td>
+            <td></td>
+            <td><input type="text" placeholder="Enter your first name"></td>
+      <tr>
+            <td><label for="">Last Name</label></td>
+            <td><label for="">:</label></td>
+            <td></td>
+            <td><input type="text" placeholder="Enter your last name"></td>
+      </tr>
+      <tr>
+            <td><label for="">Email</label></td>
+            <td><label for="">:</label></td>
+            <td></td>
+            <td><input type="text" placeholder="Enter your Email"></td>
+      </tr>
+      <tr>
+            <td><label for="">Password</label></td>
+            <td><label for="">:</label></td>
+            <td></td>
+            <td><input type="password" placeholder="Enter a password"></td>
+      </tr>
+      <tr>
+            <td><label for="">Confrim Password</label></td>
+            <td><label for="">:</label></td>
+            <td></td>
+            <td><input type="password" placeholder="Confrim your password"></td>
+      </tr>
+      <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="submit" value="Sign up"></td>
+     </tr>
+    </table>
+  </form>
+ </body>
+</html>
+
+ -->

@@ -1,0 +1,28 @@
+.banner{
+    display: flex;
+    background-color: aquamarine;
+    padding: auto;
+    align-items: center;
+    padding: 20px;
+}
+.banner-container{
+    flex: 1;
+    text-align: center;
+}
+.banner-img-container{
+    flex: 1;
+    justify-content: center;
+    
+}
+.banner-img-container img{
+    width: 100%;
+}
+.banner-container button{
+    background-color: rgb(28, 235, 13);
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.banner-container button:hover{
+    background-color: blueviolet;
+}

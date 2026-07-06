@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Elements & Nesting
+    1. div>p>span
+    2. div+p+span
+    3. div>p+span -->
+    <div>
+        <p><span></span></p>
+    </div>
+
+    <div></div>
+    <p></p>
+    <span></span>
+
+    <div>
+        <p></p>
+        <span></span>
+    </div>
+
+    <!-- 2. chimbing up ^
+    1. div>p^span
+    2. div>div>p^^span -->
+
+    <div>
+        <p></p>
+    </div>
+    <span></span>
+
+    <div>
+        <div>
+            <p></p>
+        </div>
+    </div>
+    <span></span>
+
+     <!-- 3. Multiplication *
+    ul>li*5 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- 4.Grouping ()
+    (div>header+footer)*3 -->
+    <div>
+        <header></header>
+        <footer></footer>
+    </div>
+    <div>
+        <header></header>
+        <footer></footer>
+    </div>
+    <div>
+        <header></header>
+        <footer></footer>
+    </div>
+
+    <!-- 5. Attributes []
+    a[href="https://x.com" target="blank"]
+    img[src="logo.png" alt="logo"]
+    img:z|c
+    a|o -->
+    <a href="bibiany.png" terget="blank"></a>
+    <img src="" alt="">
+    <img src="" alt="" sizes="" srcset="">
+
+    <!-- 6. ID & Class # .
+    div#main.container.box -->
+    <div id="main" class="contaiter box"></div>
+
+    <!-- 7. Text {}
+    a{Click me}
+    p{Hello World} -->
+    <a href="">Click me</a>
+    <p>Hello emmet</p>
+
+    <!-- 8.Numbering $
+    ul>li.item$*5
+    ul>li.item$$$*5
+    ul>li.item$@3*5
+    ul>li.item$@-*5  -->
+    <ul>
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+    </ul>
+    <ul>
+        <li class="item001"></li>
+        <li class="item002"></li>
+        <li class="item003"></li>
+        <li class="item004"></li>
+        <li class="item005"></li>
+    </ul>
+    <ul>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+        <li class="item6"></li>
+        <li class="item7"></li>
+    </ul>
+    <ul>
+        <li class="item12-"></li>
+        <li class="item22-"></li>
+        <li class="item32-"></li>
+        <li class="item42-"></li>
+        <li class="item52-"></li>
+    </ul>
+
+    <!-- 9. Lorem Ipsum
+    lorem
+    lorem10
+    lorem*3 -->
+    Lorem ipsum dolor sit amet consectetur adipisicing
+    elit.Distinctio molestiae omnis voluptate nobis odit
+    necessitatibus natus commodi pariatur architecto
+    repellat consequatur molestias deleniti nemo perferendis
+    voluptates nostrum, doloremque magnam voluptatem?
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing
+    elit. Magni, magnam consectetur modi ratione sequi,
+    soluta, fugit ullam qui aut vitae accusamus debitis
+    ipsum minima voluptates consequatur quod molestiae.
+    Explicabo, obcaecati.
+
+</body>
+</html>

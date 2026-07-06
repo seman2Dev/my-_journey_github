@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un-Limited Halal</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+    @keyframes marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+        animation: marquee 15s linear infinite;
+    }
+</style>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        /* Top Navigation */
+        .navbar { background-color: rgb(88, 206, 107); padding: 10px 20px; display: flex; align-items: center; border-bottom: 1px solid #ddd; }
+        .logo { color: #04AA6D; font-size: 24px; font-weight: bold; margin-right: 20px; text-decoration: none; }
+        .nav-links a { padding: 10px 15px; text-decoration: none; color: black; font-size: 15px; }
+        .nav-links a:hover { background-color: #f1f1f1; }
+        .sbar{ border-radius: 15px; text-align: center;}
+
+        /* Sub Navigation (Green Bar) */
+        .sub-nav { background-color: green; overflow-x: auto; white-space: nowrap; }
+        .sub-nav a { display: inline-block; color: white; padding: 12px 18px; text-decoration: none; font-size: 15px; }
+        .sub-nav a:hover { background-color: #fd0612; }
+
+        /* Main Layout */
+        .container { display: flex; }
+
+        /* Sidebar */
+        .sidebar { width: 220px; background-color: #E7E9EB; height: calc(100vh - 100px); overflow-y: auto; padding: 15px 0; }
+        .sidebar h4 { padding: 10px 20px; font-size: 18px; }
+        .sidebar a { display: block; padding: 6px 20px; text-decoration: none; color: black; font-size: 14px; }
+        .sidebar a:hover { background-color: #ccc; }
+        .sidebar a.active { background-color: #04AA6D; color: white; }
+
+        /* Content Area */
+        .main-content { flex: 1; padding: 40px; background-color: #fff; }
+        .main-content h1 { font-size: 42px; margin-bottom: 20px; }
+        .btn-nav { display: flex; justify-content: space-between; margin-bottom: 30px; }
+        .btn { padding: 10px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; color: white; }
+        .btn-home { background-color: #04AA6D; }
+        .btn-next { background-color: rgb(179, 179, 5)}
+
+        /* Info Boxes */
+        .info-section {margin-top: 40px; }
+        .box { flex: 1; padding: 30px; text-align: center; border-radius: 8px; gap: 10px;}
+        .box-tutorial { background-color: #D9EEE1; }
+        .box-cert { background-color: #FFF4A3;  }
+        .box h3 { margin-bottom: 15px; }
+        .action-btn { display: inline-block; padding: 12px 25px; border-radius: 25px; text-decoration: none; margin-top: 15px; font-weight: bold; }
+        .green-btn { background-color: #04AA6D; color: white; }
+        .purple-btn { background-color: #282A35; color: white; }
+
+        /* Sidebar Right (Ads/Promo) */
+        .right-sidebar { width: 200px; padding: 20px; text-align: center; border-left: 1px solid #ddd; }
+        .promo-box { border: 1px solid #dddddd; padding: 15px; border-radius: 5px; background: #f9f9f9; }
+        .promo-box h2 { color: #04AA6D; margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+    <!-- Announcement bar -->
+    <div class="bg-yellow-600 text-red-800 py-2 px-4 flex items-center justify-between text-[11px] md:text-xs font-medium
+    tracking-wide animate-marquee">
+
+    <div class="flex items-center space-x-4 overflow-x-auto whitespace-nowrap scrollbar-hide">
+    <span class="opacity-70">Assa-lamu-alaikum everyone!</span>
+    <span class="text-black-900">|</span>
+    <span>The Creative Pass</span>
+    <span class="text-gray-500">|</span>
+    <span class="opacity-70">May ALLAH barakah all of you</span>
+    <span class="text-gray-500">|</span>
+    <span>Visit our all website</span>
+    </div>
+
+    <div class="hidden sm:flex items-center space-x-3 ml-4">
+    <a href="#" class="underline hover:text-gray-300">Visite all website</a>
+    <button class="hover:opacity-60">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+    </button>
+</div>
+</div>
+
+<!-- Announcement bar end -->
+    <div class="navbar">
+        <img src="UnLimited-Halal.png" alt="" style="height: 50px; width: 50px;">
+        <div class="nav-links">
+            <a href="#">Section <i class="fa fa-caret-down"></i></a>
+            <a href="#">Products <i class="fa fa-caret-down"></i></a>
+            <a href="#">Knowledge <i class="fa fa-caret-down"></i></a>
+            <input type="search" placeholder="Search..." class="sbar">
+            <label for=""></label>
+            <button style="font: bolder; background-color:green; width: 60px; height: 30px; border-radius: 10px;">Sign In</button>
+        </div>
+    </div>
+
+    <div class="sub-nav">
+        <a href="#" class="active">HALALIAT</a>
+        <a href="#">CLOTHS</a>
+        <a href="#">DRAY FOOD</a>
+        <a href="#">CONSTRUCTION</a>
+        <a href="#">FARMING</a>
+        <a href="#">EXCESORIS</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h4 style="color: blue;">HALALIAT</h4>
+            <a href="#">Tiri</a>
+            <a href="#">Tordah</a>
+            <a href="#">Tigaret</a>
+            <a href="#">Tul</a>
+            <a href="#">Tan</a>
+            <a href="#">HTML Headings</a>
+            <a href="#">HTML Paragraphs</a>
+            <a href="#">HTML Styles</a>
+        </div>
+
+        <div class="main-content">
+            <h1 style="color: blue;">HALALIAT</h1>
+
+            <div class="btn-nav">
+                <button class="btn btn-home">❮ Home</button>
+                <button class="btn btn-next">Next ❯</button>
+            </div>
+
+            <hr>
+
+            <div style="margin-top: 30px;">
+                <h2>HLALIAT's Products</h2>
+                <p style="margin: 20px 0;">All our products are fully halal! It is a </p>
+            </div>
+
+            <div class="info-section">
+                <div class="box box-tutorial">
+                    <h3>Tiri</h3>
+                    <p>It's Halal. It made with </p>
+                    <a href="#" class="action-btn green-btn">Buy Now »</a>
+                </div>
+                <div class="box box-cert">
+                    <h3>Torda</h3>
+                    <p>Get certified by completing a course</p>
+                    <a href="#" class="action-btn purple-btn">Buy Now »</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-sidebar">
+            <div class="promo-box">
+                <small>Get Certified</small>
+                <h2>$499</h2>
+                <a href="#" style="color: #04AA6D; text-decoration: none; font-size: 12px;">Learn more</a>
+            </div>
+            <p style="margin-top: 20px; font-size: 12px; color: gray;">COLOR PICKER</p>
+            <img src="logo.png" width="100" style="margin-top: 10px;">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance CSS</title>
+    <link rel="icon" href="images/css-coding.png">
+    <link rel="stylesheet" href="banner.css">
+    <style>
+        hr{
+            margin: 50px 0;
+            border: 2px solid #000;
+        }
+        .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .box{
+            background-color: rgb(253, 188, 9);
+            padding: 20px;
+            text-align: center;
+        }
+        .calendar-container{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .calendar{
+            border: 3px solid #000;
+        }
+        .calendar-container .day{
+            background-color: rgb(2, 191, 248);
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            display: grid;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+        }
+        .calendar-container .date{
+            background-color: rgb(250, 152, 6);
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            display: grid;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            justify-content: center;
+        }
+        .calendar-container .date:nth-child(7n+6), .calendar-container .date:nth-child(7n+7){
+            background-color: rgb(255, 0, 0);
+        }
+        .fruit-container div img{
+            height:300px;
+            width: 300px;
+        }
+        .fruit-container div{
+            text-align: center;
+            width: 400px;
+            border: solid 5px #0328f8;
+        }
+        .papaya1{
+            background-color: rgb(130, 209, 40);
+            position: absolute;
+            left: 250px;
+        }
+        .banana1{
+            background-color: rgb(255, 174, 0);
+            position: relative;
+            right: -50px;
+        }
+        .fruits-container{
+            border: 5px solid #0344f7;
+            gap: 0px;
+            text-align: center;
+            position: relative;
+        }
+        .fruits-container div img{
+            height: 100%;
+            width: 300px;
+            border: 5px solid #50f703;
+        }
+        .css-coding{
+            position: sticky;
+            top: 0;
+        }
+        nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #0df7d0;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            justify-content: center;
+            padding: 15px;
+            margin: 0;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        ul.ul2{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            justify-content: center;
+            background-color: #f7d40d;
+        }
+    </style>
+</head>
+<body>
+    <header style="padding-top: 100px;">
+    <nav>
+        <ul class="nav-ul">
+            <li><a href="class_2-5.htm">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="banner">
+        <div class="banner-container">
+        <h1>Hero section</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente expedita ipsam magnam dignissimos, adipisci est, quo recusandae necessitatibus, odio quaerat quia libero velit temporibus eligendi enim voluptatum. Accusamus autem inventore, fugiat officiis cumque sequi amet accusantium libero, asperiores saepe reiciendis explicabo aliquam repudiandae labore. Ex laborum magni corporis sit neque!</p>
+        <button>Buy Now</button>
+        </div>
+        <div class="banner-img-container">
+            <img src="images/l1.jpeg" alt="">
+        </div>
+    </section>
+    </header>
+
+    <div class="box-container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+        <div class="box">box-6</div>
+        <div class="box">box-7</div>
+        <div class="box">box-8</div>
+        <div class="box">box-9</div>
+        <div class="box">box-10</div>
+        <div class="box">box-11</div>
+        <div class="box">box-12</div>
+        <div class="box">box-13</div>
+        <div class="box">box-14</div>
+        <div class="box">box-15</div>
+        <div class="box">box-16</div>
+        <div class="box">box-17</div>
+        <div class="box">box-18</div>
+        <div class="box">box-19</div>
+        <div class="box">box-20</div>
+    </div>
+    <hr>
+
+    <div class="calendar" style="text-align: center; border: 3px solid #000;">
+        <h2 style="text-align: center;">Calendar</h2>
+    <div class="calendar-container">
+        <div class="day">Sun</div>
+        <div class="day">Mon</div>
+        <div class="day">Tue</div>
+        <div class="day">Wed</div>
+        <div class="day">Thu</div>
+        <div class="day">Fri</div>
+        <div class="day">Sat</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
+        <div class="date">01</div>
+    </div>
+</div>
+
+<ul class="ul2">
+    <li>static</li>
+    <li>relative</li>
+    <li>absolute</li>
+    <li>sticky</li>
+    <li>fixed</li>
+</ul>
+<div class="fruit-container">
+    <div class="banana1"><img src="images/banana.png" alt=""></div>
+    <div class="papaya1"><img src="images/papaya.png" alt=""></div>
+    <div class="dragon-fruit"><img src="images/dragon-fruit.png" alt=""></div>
+</div>
+<hr>
+<div class="fruits-container">
+    <div class="pineaple"><img src="images/pineapple.png" alt=""></div>
+    <div class="css-coding"><img src="images/css-coding.png" alt=""></div>
+    <div class="papaya"><img src="images/papaya.png" alt=""></div>
+    <div class="passion-fruit"><img src="images/passion-fruit.png" alt=""></div>
+    <div class="pomegranate"><img src="images/pomegranate.png" alt=""></div>
+    <div class="strawberry"><img src="images/strawberry.png" alt=""></div>
+    <div class="dragon-fruit"><img src="images/dragon-fruit.png" alt=""></div>
+    <div class="banana2"><img src="images/banana.png" alt=""></div>
+    <div class="papaya2"><img src="images/papaya.png" alt=""></div>
+    <div class="pomegranate2"><img src="images/pomegranate.png" alt=""></div>
+</div>
+</body>
+</html>
